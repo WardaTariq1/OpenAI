@@ -27,16 +27,15 @@ Project Structure
 lib/
 ├── main.dart                   # Entry point of the application
 ├── screens/
-│   ├── chat_screen.dart        # Screen for OpenAI chat integration
-│   └── list_screen.dart        # Screen for displaying REST API data
+│   ├── openAiChat.dart        # Screen for OpenAI chat integration
+│   └── postList.dart        # Screen for displaying REST API data
 ├── providers/
-│   └── chat_provider.dart      # State management for OpenAI chat
+│   └── openAiProvider.dart      # State management for OpenAI chat
+    └── postsProvider.dart      # State management for Posts list
 ├── services/
-│   └── openai_service.dart     # Service for interacting with OpenAI API
-├── widgets/
-│   └── post_list_tile.dart     # Custom widget for displaying post items
-└── utils/
-└── error_handler.dart      # Utility for handling errors
+│   └── openAI.dart     # Service for interacting with OpenAI API
+    └── posts.dart     # Service for interacting with Posts API
+
 
 Dependencies
 This project uses the following Flutter packages:

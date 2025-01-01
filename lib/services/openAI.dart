@@ -8,6 +8,7 @@ class OpenAI {
     final headers = {
       'Content-Type': 'application/json',
       'Authorization': 'Bearer _apiKey',
+      //cannot use real API key here because of security issues with github
     };
     final body = jsonEncode({
       'model': 'gpt-4o-mini',
